@@ -99,12 +99,24 @@ public class Main {
         int eggs = 4 * 70;
 
         int totalGram = bananas + milk + iceCream + eggs;
-        System.out.println(totalGram);
+        System.out.println("Результат в граммах " + totalGram);
 
         float totalKilogram = totalGram / 1000f;
-        System.out.println(totalKilogram);
+        System.out.println("Результат в килограммах " + totalKilogram);
 
+        //Задание 7
 
+        int needToReset = 7*1000;
+        int option250PerDay = 250 ;
+        int option500PerDay = 500 ;
 
+        int option250DaysNeed = needToReset / option250PerDay;
+        System.out.println("Если худеть на 250 грамм в день, то потребуется " + option250DaysNeed + " дней");
+
+        int option500DaysNeed = needToReset / option500PerDay;
+        System.out.println("Если худеть на 500 грамм в день, то потребуется " + option500DaysNeed + " дней");
+
+        int onAverageDaysNeeded = (option250DaysNeed + option500DaysNeed) / 2;
+        System.out.println("В среднейм потребуется " + onAverageDaysNeeded + " день");
     }
 }
