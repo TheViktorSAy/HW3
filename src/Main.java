@@ -69,7 +69,7 @@ public class Main {
         System.out.println("За 1 день машина произвела " + bottlesIn1Day + " бутылок");
 
         int bottlesIn3Days = bottlePerMinute * minutesInADay * 3;
-        System.out.println("За 3 дня машина произвелка "+ bottlesIn3Days + " бутылок");
+        System.out.println("За 3 дня машина произвела "+ bottlesIn3Days + " бутылок");
 
         int bottlesIn1Month = bottlePerMinute * minutesInADay * 30;
         System.out.println("За 1 месяц машина произвела " + bottlesIn1Month + " бутылок");
@@ -77,10 +77,19 @@ public class Main {
 
         // Задание 5
 
+        byte totalCansOfPaint = 120;
+        byte forOneClassOfCansWhite = 2;
+        byte forOneClassOfCansBrown = 4;
+        int forOneClassOfCans = forOneClassOfCansWhite + forOneClassOfCansBrown;
+        System.out.println("Банок на один класс " + forOneClassOfCans);
 
+        int totalClasses = totalCansOfPaint / forOneClassOfCans;
+        System.out.println("Всего классов " + totalClasses);
 
+        int totalWhiteCans = forOneClassOfCansWhite * totalClasses;
+        int totalBrownCans = forOneClassOfCansBrown * totalClasses;
 
-
+        System.out.println("В школе, где " + totalClasses + " классов, нужно " + totalWhiteCans + " банок белой краски и " + totalBrownCans + " банок коричневой краски");
 
     }
 }
