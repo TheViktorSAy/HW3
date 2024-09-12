@@ -91,5 +91,20 @@ public class Main {
 
         System.out.println("В школе, где " + totalClasses + " классов, нужно " + totalWhiteCans + " банок белой краски и " + totalBrownCans + " банок коричневой краски");
 
+        //Задание 6
+
+        int bananas = 5 * 80;
+        int milk = 200 / 100 * 105;
+        int iceCream = 2 * 100;
+        int eggs = 4 * 70;
+
+        int totalGram = bananas + milk + iceCream + eggs;
+        System.out.println(totalGram);
+
+        float totalKilogram = totalGram / 1000f;
+        System.out.println(totalKilogram);
+
+
+
     }
 }
