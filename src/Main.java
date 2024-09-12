@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        //Задание 1
+        // Задание 1
 
         byte a = 100;
         System.out.println(a);
@@ -44,9 +44,14 @@ public class Main {
         byte g1 = 67;
         System.out.println(g1);
 
+        // Задание 3
 
-
-
+        byte ludmilaPavlovna = 23;
+        byte annaSergeevna = 27;
+        byte ekaterinaAndreevna = 30;
+        short totalSheetsOfPaper = 480;
+        float perStudentPaper = totalSheetsOfPaper / (ludmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
+        System.out.println("На каждого ученика рассчитано "+ perStudentPaper + " листов бумаги");
 
 
     }
