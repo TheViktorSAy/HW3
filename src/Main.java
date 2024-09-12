@@ -63,17 +63,19 @@ public class Main {
         System.out.println("Минут в одном дне " +minutesInADay);
 
         int bottlesIn20Minutes = bottlePerMinute * 20;
-        System.out.println("Бутыолк за 20 минут " + bottlesIn20Minutes);
+        System.out.println("За 20 минут машина произвела " + bottlesIn20Minutes + " бутылок");
 
         int bottlesIn1Day = bottlePerMinute * minutesInADay;
-        System.out.println("Бутылок за 1 день " + bottlesIn1Day);
+        System.out.println("За 1 день машина произвела " + bottlesIn1Day + " бутылок");
 
         int bottlesIn3Days = bottlePerMinute * minutesInADay * 3;
-        System.out.println("Бутылок за 3 дня "+ bottlesIn3Days);
+        System.out.println("За 3 дня машина произвелка "+ bottlesIn3Days + " бутылок");
 
         int bottlesIn1Month = bottlePerMinute * minutesInADay * 30;
-        System.out.println("Бутылок за 1 месяц " + bottlesIn1Month);
+        System.out.println("За 1 месяц машина произвела " + bottlesIn1Month + " бутылок");
 
+
+        // Задание 5
 
 
 
