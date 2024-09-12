@@ -50,8 +50,34 @@ public class Main {
         byte annaSergeevna = 27;
         byte ekaterinaAndreevna = 30;
         short totalSheetsOfPaper = 480;
-        float perStudentPaper = totalSheetsOfPaper / (ludmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
+        int perStudentPaper = totalSheetsOfPaper / (ludmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
         System.out.println("На каждого ученика рассчитано "+ perStudentPaper + " листов бумаги");
+
+
+        //Задание 4
+
+        byte bottlePerMinute = 16 / 2;
+        System.out.println( "Бутылок за 1 минуту "+ bottlePerMinute);
+
+        short minutesInADay = 60 * 24;
+        System.out.println("Минут в одном дне " +minutesInADay);
+
+        int bottlesIn20Minutes = bottlePerMinute * 20;
+        System.out.println("Бутыолк за 20 минут " + bottlesIn20Minutes);
+
+        int bottlesIn1Day = bottlePerMinute * minutesInADay;
+        System.out.println("Бутылок за 1 день " + bottlesIn1Day);
+
+        int bottlesIn3Days = bottlePerMinute * minutesInADay * 3;
+        System.out.println("Бутылок за 3 дня "+ bottlesIn3Days);
+
+        int bottlesIn1Month = bottlePerMinute * minutesInADay * 30;
+        System.out.println("Бутылок за 1 месяц " + bottlesIn1Month);
+
+
+
+
+
 
 
     }
