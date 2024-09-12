@@ -118,5 +118,36 @@ public class Main {
 
         int onAverageDaysNeeded = (option250DaysNeed + option500DaysNeed) / 2;
         System.out.println("В среднейм потребуется " + onAverageDaysNeeded + " день");
+
+
+        //Задание 8
+
+        int mashaPerMonthAsIs = 67760;
+        int denisPerMonthAsIs = 83690;
+        int kristinaPerMonthAsIs = 76239;
+
+        int mashaPerYearAsIs = 67760 * 12;
+        int denisPerYearAsIs = 83690 * 12;
+        int kristinaPerYearAsIs = 76239 * 12;
+
+        float incrise = 0.10f;
+
+        float mashaPerMonthToBe = (mashaPerMonthAsIs * incrise) + mashaPerMonthAsIs;
+        float denisPerMonthToBe = (denisPerMonthAsIs * incrise) + denisPerMonthAsIs;
+        float kristinaPerMonthToBe = (kristinaPerMonthAsIs * incrise) + kristinaPerMonthAsIs;
+
+        float mashaPerYearToBe = mashaPerMonthToBe * 12;
+        float denisPerYearToBE = denisPerMonthToBe * 12;
+        float kristinaPerYearToBe = kristinaPerMonthToBe * 12;
+
+        float mashaDeltaPerYear = mashaPerYearToBe - mashaPerYearAsIs;
+        float denisDeltaPerYear = denisPerYearToBE - denisPerYearAsIs;
+        float kristinaDeltaPerYear = kristinaPerYearToBe - kristinaPerYearAsIs;
+
+        System.out.println("Маша теперь получает " + mashaPerMonthToBe + " рублей. Годовой доход вырос на " + mashaDeltaPerYear + " рублей");
+        System.out.println("Денис теперь получает " + denisPerMonthToBe + " рублей. Годовой доход вырос на " + denisDeltaPerYear + " рублей");
+        System.out.println("Кристина теперь получает " + kristinaPerMonthToBe + " рублей. Годовой доход вырос на " + kristinaDeltaPerYear + " рублей");
+
+
     }
 }
